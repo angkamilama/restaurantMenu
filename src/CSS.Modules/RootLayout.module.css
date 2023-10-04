@@ -1,0 +1,24 @@
+nav {
+    width: 100vw;
+    height: 9vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+    background-color: rgb(181, 198, 213);
+}
+
+.navLists {
+    color: rgb(82, 70, 70);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 19px;
+
+}
+
+.navLists:hover {
+    color: rgb(8, 74, 131);
+    font-weight: 600;
+    text-decoration: dotted;
+    transform: scale(1.2);
+}
