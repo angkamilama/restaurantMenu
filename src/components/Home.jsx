@@ -72,7 +72,7 @@ function Home() {
         <div className={styles.main_body}>
             <div className={styles.restaurant_description}>
                 <div >
-                    <img src='../src/assets/restaurant-homepage.jpg' className={styles.restaurantImage} />
+                    <img src={'../src/assets/restaurantHomepage.jpg'} className={styles.restaurantImage} />
                 </div>
                 <div className={styles.restaurant_detail}>
                     <h2>HIMALAYAN FLAVOUR RESTAURANT</h2>
