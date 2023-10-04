@@ -6,7 +6,7 @@ function RootLayout() {
     return (
         <>
             <nav >
-                <NavLink to="/Home" className={styles.navLists}>HOME</NavLink>
+                <NavLink to='/' className={styles.navLists}>HOME</NavLink>
                 <NavLink to="/About" className={styles.navLists}>ABOUT</NavLink>
                 <NavLink to="/Search" className={styles.navLists}>SEARCHFOOD</NavLink>
             </nav>
