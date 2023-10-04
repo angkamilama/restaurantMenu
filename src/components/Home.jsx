@@ -3,6 +3,7 @@ import axios from 'axios'
 import styles from '../CSS.Modules/Home.module.css'
 import { useNavigate } from 'react-router-dom';
 import { ItemContext } from '../context/ItemContext';
+import restaurant from '../assets/restaurantHomepage.jpg';
 
 
 function Home() {
@@ -72,7 +73,7 @@ function Home() {
         <div className={styles.main_body}>
             <div className={styles.restaurant_description}>
                 <div >
-                    <img src={'../src/assets/restaurantHomepage.jpg'} className={styles.restaurantImage} />
+                    <img src={restaurant} className={styles.restaurantImage} />
                 </div>
                 <div className={styles.restaurant_detail}>
                     <h2>HIMALAYAN FLAVOUR RESTAURANT</h2>
