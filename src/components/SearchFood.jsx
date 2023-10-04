@@ -19,7 +19,6 @@ function SearchFood() {
     if (menuItemOptionSets) {
         menuItem = menuItemOptionSets.map(menuItemOptionSet => {
             const { IsMasterOptionSet, MenuItemOptionSetItems } = menuItemOptionSet;
-            // console.log(MenuItemOptionSetItems, IsMasterOptionSet)
 
             const menuItemOptionSetItem = MenuItemOptionSetItems.map(MenuItemOptionSetItem => {
 
