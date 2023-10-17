@@ -12,6 +12,7 @@ import About from "./components/About";
 import SearchFood from "./components/SearchFood";
 import { ItemContext } from "./context/ItemContext";
 
+
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element={<RootLayout />} >
