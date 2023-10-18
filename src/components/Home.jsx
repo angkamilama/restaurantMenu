@@ -15,7 +15,6 @@ function Home() {
         `https://menus.flipdish.co/prod/16798/e6220da2-c34a-4ea2-bb51-a3e190fc5f08.json`
       );
       const data = response.data;
-      console.log(data.MenuSections);
       setRetrievedData(data.MenuSections);
     } catch (error) {
       console.log('there is an error');
@@ -27,14 +26,13 @@ function Home() {
   }, []);
 
   const menuSectionItems = retrievedData.map((menuSectionItem) => {
-    console.log(menuSectionItem);
     const {Name, MenuSectionId, ImageUrl, MenuItems} = menuSectionItem;
     if (MenuItems.length > 0) {
       const menuSectionItem = MenuItems.map((item) => {
         if (item.length !== 0) {
           const {Name, id} = item;
           return (
-            <>
+            <div>
               <button
                 key={id}
                 className="border border-green-800 p-2 m-3 rounded-md bg-blue-100/50 cursor-pointer hover:scale-110 hover:bg-blue-300/75 text-sm"
@@ -45,7 +43,7 @@ function Home() {
               >
                 {Name}
               </button>
-            </>
+            </div>
           );
         } else {
           return;
