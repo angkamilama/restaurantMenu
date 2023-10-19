@@ -56,7 +56,7 @@ function Home() {
             style={{
               backgroundImage: `url(${ImageUrl})`,
             }}
-            className="mx-auto mb-4  h-[300px] w-10/12 border border-green-800 bg-cover bg-center bg-no-repeat rounded-lg  hover:scale-110 md:w-7/12 md:h-[200px]"
+            className="mx-auto mb-4  h-[300px] w-10/12 border border-green-800 bg-cover bg-center bg-no-repeat rounded-lg   md:w-7/12 md:h-[200px]"
           ></div>
           <div className="flex justify-evenly items-center">
             {" "}
