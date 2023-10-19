@@ -1,13 +1,13 @@
-import React, {useState, useEffect, useContext} from 'react';
-import axios from 'axios';
-import {useNavigate} from 'react-router-dom';
-import {ItemContext} from '../context/ItemContext';
-import restaurant from '../assets/restaurantHomepage.jpg';
+import React, { useState, useEffect, useContext } from "react";
+import axios from "axios";
+import { useNavigate } from "react-router-dom";
+import { ItemContext } from "../context/ItemContext";
+import restaurant from "../assets/restaurantHomepage.jpg";
 
 function Home() {
   const [retrievedData, setRetrievedData] = useState([]);
   const navigate = useNavigate();
-  const {receivedItem, setReceivedItem} = useContext(ItemContext);
+  const { receivedItem, setReceivedItem } = useContext(ItemContext);
 
   async function fetchData() {
     try {
@@ -17,7 +17,7 @@ function Home() {
       const data = response.data;
       setRetrievedData(data.MenuSections);
     } catch (error) {
-      console.log('there is an error');
+      console.log("there is an error");
     }
   }
 
@@ -26,11 +26,11 @@ function Home() {
   }, []);
 
   const menuSectionItems = retrievedData.map((menuSectionItem) => {
-    const {Name, MenuSectionId, ImageUrl, MenuItems} = menuSectionItem;
+    const { Name, MenuSectionId, ImageUrl, MenuItems } = menuSectionItem;
     if (MenuItems.length > 0) {
       const menuSectionItem = MenuItems.map((item) => {
         if (item.length !== 0) {
-          const {Name, id} = item;
+          const { Name, id } = item;
           return (
             <div>
               <button
@@ -38,7 +38,7 @@ function Home() {
                 className="border border-green-800 p-2 m-3 rounded-md bg-blue-100/50 cursor-pointer hover:scale-110 hover:bg-blue-300/75 text-sm"
                 onClick={() => {
                   setReceivedItem(item);
-                  navigate('/Search');
+                  navigate("/Search");
                 }}
               >
                 {Name}
@@ -50,22 +50,25 @@ function Home() {
         }
       });
       return (
-        <div className="p-1 m-4 w-10/12 flex-col  rounded-xl justify-evenly items-center md:flex md:w-[350px] ">
+        <div className="p-1 m-4 w-10/12 flex-col rounded-xl justify-evenly items-center md:flex md:w-[350px] ">
           <p className="mb-4 text-xl">{Name}</p>
           <div
             style={{
               backgroundImage: `url(${ImageUrl})`,
             }}
-            className="mx-auto mb-4  rounded-lg h-32 w-7/12 border border-green-800 bg-cover bg-center bg-no-repeat"
+            className="mx-auto mb-4  h-[300px] w-10/12 border border-green-800 bg-cover bg-center bg-no-repeat rounded-lg  hover:scale-110 md:w-7/12 md:h-[200px]"
           ></div>
-          <div> {menuSectionItem}</div>
+          <div className="flex justify-evenly items-center">
+            {" "}
+            {menuSectionItem}
+          </div>
         </div>
       );
     }
   });
 
   return (
-    <div>
+    <div className="scroll-smooth">
       <div className=" leading-8 font-serif w-full h-auto mx-auto my-5 flex flex-col items-center p-3 md:w-11/12 md:flex-row ">
         <div className="h-55 w-10/12 p-2 mx-2">
           <img src={restaurant} className="w-full rounded-lg sm:h-fit" />
