@@ -76,7 +76,7 @@ function Home() {
         <div className="h-auto w-10/12 p-2 mx-2">
           <h2 className="mb-2 text-2xl ">HIMALAYAN FLAVOUR RESTAURANT</h2>
           <p>
-            Our restaurant(new git changessssss), located at the heart of essen
+            Our restaurant, located at the heart of essen
             city in Germany offers a wide range of food services with perfect
             environment for friends and families. Our restaurant serves you all
             year round with natural and uncomplicated flavors whether you want
