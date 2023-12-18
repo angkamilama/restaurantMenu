@@ -76,18 +76,18 @@ function Home() {
         <div className="h-auto w-10/12 p-2 mx-2">
           <h2 className="mb-2 text-2xl ">HIMALAYAN FLAVOUR RESTAURANT</h2>
           <p>
-            Our restaurant, located at the heart of essen city in Germany offers
-            a wide range of food services with perfect environment for friends
-            and families. Our restaurant serves you all year round with natural
-            and uncomplicated flavors whether you want to enjoy a lunch or a
-            quick cup of coffee. Our awarded Chef de cuisine Henry Tikkanen
-            appreciates local, high-quality and seasonal ingredients. Restaurant
-            Gösta arranges also special dining menus, champagne-tasting and
-            banquet dinner for more sophisticated needs. We recommend you book a
-            table beforehand particularly during spring and summer seasons. You
-            can also buy the restaurant’s special Art Menu online and reserve
-            the table at the same time or just book a table and order à la
-            carte.
+            Our restaurant(new git changessssss), located at the heart of essen
+            city in Germany offers a wide range of food services with perfect
+            environment for friends and families. Our restaurant serves you all
+            year round with natural and uncomplicated flavors whether you want
+            to enjoy a lunch or a quick cup of coffee. Our awarded Chef de
+            cuisine Henry Tikkanen appreciates local, high-quality and seasonal
+            ingredients. Restaurant Gösta arranges also special dining menus,
+            champagne-tasting and banquet dinner for more sophisticated needs.
+            We recommend you book a table beforehand particularly during spring
+            and summer seasons. You can also buy the restaurant’s special Art
+            Menu online and reserve the table at the same time or just book a
+            table and order à la carte.
           </p>
           <h4 className="mb-4">
             In wintertime (Sep–May), the restaurant is open from Tuesday to
